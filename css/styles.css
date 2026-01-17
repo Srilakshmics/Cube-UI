@@ -67,7 +67,6 @@ ul {
 }
 
 .container {
-    max-width: var(--container-max-width);
     margin: 0 auto;
     padding: 0 var(--container-padding);
 }
@@ -78,10 +77,9 @@ ul {
 .header {
     position: sticky;
     top: 0;
-    background: var(--white);
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     z-index: 1000;
     transition: var(--transition-base);
+    box-shadow: none !important;
 }
 
 .header-content {
@@ -241,10 +239,14 @@ ul {
 }
 
 .hero {
-    background: linear-gradient(to bottom, #f0fdf4 0%, #dcfce7 100%);
-    padding: 60px 0 0;
     position: relative;
     overflow: hidden;
+    padding: 10px 0 0;
+    min-height: 100vh;
+    background-image: url("../assets/images/hero-perfume.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .hero-content {
@@ -252,7 +254,8 @@ ul {
     grid-template-columns: 1fr 1fr;
     gap: 60px;
     align-items: center;
-    min-height: 600px;
+    min-height: 500px;
+    z-index:1;
 }
 
 .hero-text {
@@ -337,13 +340,13 @@ ul {
     height: 100%;
 }
 
-.hero-image img {
+/* .hero-image img {
     width: 100%;
     max-width: 450px;
     height: auto;
     object-fit: contain;
     filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.15));
-}
+} */
 
 /* ===================================
    Product Section
