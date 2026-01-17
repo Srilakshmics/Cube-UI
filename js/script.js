@@ -46,10 +46,10 @@ function initImageGallery() {
 
 
     const images = [
-        'assets/images/product-1.png',
-        'assets/images/product-2.png',
-        'assets/images/product-3.png',
-        'assets/images/product-4.png'
+        'assets/images/product1.png',
+        'assets/images/product2.png',
+        'assets/images/product3.png',
+        'assets/images/product4.png'
     ];
 
     let currentIndex = 0;
